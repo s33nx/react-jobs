@@ -1,0 +1,4 @@
+- [x] Fix JobListing.jsx to accept and use the job prop
+- [x] Remove hardcoded job cards from JobListings.jsx
+- [x] Run npm run dev to start the development server
+- [ ] Launch browser and verify the app displays correctly
