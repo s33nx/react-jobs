@@ -16,15 +16,13 @@ const JobListings = ({ isHome = false }) => {
         setJobs(data);
       } catch (error) {
         console.log('Error fetching data', error);
-        // fallback to JSON data if fetch fails
-        const fallbackJobs = isHome ? jobsData.jobs.slice(0, 3) : jobsData.jobs;
-        setJobs(fallbackJobs);
+        
       } finally {
         setLoading(false);
       }
     };
     fetchJobs();
-  }, [isHome]);
+  }, []);
 
   if (loading) return <Spinner />;
 
